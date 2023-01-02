@@ -22,8 +22,4 @@
     <ProjectReference Include="..\Taxually.TechnicalTest.Interfaces\Taxually.TechnicalTest.Interfaces.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Services" />
-  </ItemGroup>
-
 </Project>

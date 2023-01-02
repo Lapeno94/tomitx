@@ -1,4 +1,5 @@
-﻿using Taxually.TechnicalTest.Infrastructure.Http;
+﻿using Taxually.TechnicalTest.Application.Services;
+using Taxually.TechnicalTest.Infrastructure.Http;
 using Taxually.TechnicalTest.Infrastructure.Queue;
 
 namespace Taxually.TechnicalTest;
@@ -24,6 +25,7 @@ public class Startup
         });
         
         services.AddSingleton<ITaxuallyQueueClient, TaxuallyQueueClient>();
+        services.AddSingleton<IRegistrationService, RegistrationService>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
