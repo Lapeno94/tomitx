@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest.Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FD5F2BAC-1E65-49AC-91E3-C9C93980836D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxually.TechnicalTest.Interfaces", "Taxually.TechnicalTest.Interfaces\Taxually.TechnicalTest.Interfaces.csproj", "{BD9D214F-B5B2-4AB4-9632-5B2CCA65C700}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{006C8C01-E068-4EFB-8B22-84584F4F3963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{006C8C01-E068-4EFB-8B22-84584F4F3963}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{006C8C01-E068-4EFB-8B22-84584F4F3963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD9D214F-B5B2-4AB4-9632-5B2CCA65C700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9D214F-B5B2-4AB4-9632-5B2CCA65C700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9D214F-B5B2-4AB4-9632-5B2CCA65C700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9D214F-B5B2-4AB4-9632-5B2CCA65C700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
