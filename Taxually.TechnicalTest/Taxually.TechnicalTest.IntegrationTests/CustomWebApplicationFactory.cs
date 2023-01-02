@@ -7,9 +7,7 @@ public class CustomWebApplicationFactory<TProgram>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.UseStartup<Startup>().ConfigureServices(services =>
-        {
-        });
+        builder.UseStartup<Startup>();
 
         builder.UseEnvironment("Development");
     }

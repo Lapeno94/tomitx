@@ -12,7 +12,7 @@ public class Startup
     {
         Configuration = configuration;
     }
-    
+
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
@@ -23,7 +23,7 @@ public class Startup
         {
             client.BaseAddress = new Uri("https://api.uktax.gov.uk");
         });
-        
+
         services.AddSingleton<ITaxuallyQueueClient, TaxuallyQueueClient>();
         services.AddSingleton<IRegistrationService, RegistrationService>();
     }
@@ -37,14 +37,11 @@ public class Startup
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-        
+
         app.UseRouting();
-        
+
         app.UseAuthorization();
 
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
+        app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
     }
 }

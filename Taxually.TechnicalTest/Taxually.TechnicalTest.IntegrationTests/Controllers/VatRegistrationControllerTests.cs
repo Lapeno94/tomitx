@@ -34,7 +34,7 @@ public class VatRegistrationControllerTests : IClassFixture<CustomWebApplication
             CompanyName = "CompanyName"
         };
         var body = JsonSerializer.Serialize(request);
-        
+
         // when
         var response = await _client.PostAsync("api/VatRegistration", new StringContent(body));
 

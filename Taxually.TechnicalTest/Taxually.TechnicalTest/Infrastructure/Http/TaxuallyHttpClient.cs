@@ -8,7 +8,7 @@
         {
             _httpClient = httpClient;
         }
-        
+
         public Task PostAsync<TRequest>(TRequest request)
         {
             // Actual HTTP call removed for purposes of this exercise

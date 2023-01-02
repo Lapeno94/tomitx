@@ -59,7 +59,7 @@ public class RegistrationService : IRegistrationService
             var serializer = new XmlSerializer(typeof(RegistrationCommand));
             serializer.Serialize(stringWriter, command);
             var xml = stringWriter.ToString();
-            
+
             // Queue xml doc to be processed
             await _taxuallyQueueClient.EnqueueAsync("vat-registration-xml", xml);
         }
